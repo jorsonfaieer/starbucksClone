@@ -17,9 +17,11 @@ body{
 /* HEADER */
 
 header{
-    -webkit-box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.15);
-    -moz-box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.15);
-    box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.15);
+    -webkit-box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.2);
+    position: relative;
+    z-index: 1;
 }
 
 .header-container{
@@ -85,3 +87,55 @@ ion-icon{
 }
 
 /* MAIN CONTENT */
+
+.main-content{
+    z-index: 0;
+}
+
+.block-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 400px;
+    padding-bottom: 30px;
+    color: #006241
+}
+
+.block-img{
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.momento{
+    background-image: url(https://djftrby1k8irl.cloudfront.net/s3fs-public/2022-05%2FSbux-Fall-Banners_WEB-MomentoStarbucks%20-%20grande.jpg?auto=format,compress&q=70&crop=focalpoint&ar=1.8:1.0&w=1400&fit=max);
+}
+
+.vivi{
+    background-image: url(https://djftrby1k8irl.cloudfront.net/s3fs-public/2022-05%2FSbux-Fall-Banners_WEB-MochaCookieCrumble.jpg?auto=format,compress&q=70&crop=focalpoint&ar=1.8:1.0&w=1400&fit=max);
+}
+
+.block-text{
+    background-color: #0062411f;
+    display: flex;
+    flex-direction: column;
+    align-items:  center;
+    justify-content: center;
+    text-transform: uppercase;
+    text-align: center;
+    gap: 20px;
+}
+
+.block-text p{
+    width: 80%;
+    font-size: 1.188rem;
+}
+
+.main-button{
+    padding: 5px 15px;
+    border-radius: 52px 52px 52px 52px;
+    -moz-border-radius: 52px 52px 52px 52px;
+    -webkit-border-radius: 52px 52px 52px 52px;
+    border: 1px solid #006241;
+    font-weight: 600;
+}
