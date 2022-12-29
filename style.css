@@ -17,9 +17,7 @@ body{
 /* HEADER */
 
 header{
-    -webkit-box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.2);
-    -moz-box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.2);
-    box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.2);
+    box-shadow: 0 3px 3px rgb(0 0 0 / 10%);
     position: relative;
     z-index: 1;
 }
@@ -90,6 +88,8 @@ ion-icon{
 
 .main-content{
     z-index: 0;
+    max-width: 1400px;
+    margin: auto;
 }
 
 .block-content{
@@ -138,4 +138,62 @@ ion-icon{
     -webkit-border-radius: 52px 52px 52px 52px;
     border: 1px solid #006241;
     font-weight: 600;
+}
+
+.main-button:hover{
+    cursor: pointer;
+}
+
+/* PREFOOTER */
+
+.region-prefooter{
+    box-shadow: 0 -3px 3px rgb(0 0 0 / 10%);
+    position: relative;
+    z-index: 1;
+    padding: 20px 0;
+}
+
+.region-prefooter  ul{
+    list-style: none;
+}
+
+.prefooter-container{
+    display: flex;
+    max-width: 1240px;
+    justify-content: space-between;
+    margin: 20px auto;
+}
+
+.prefooter-container img{
+    height: 98px;
+}
+
+.wrapper-menu{
+    display: flex;
+}
+
+.block-menu{
+    margin-right: 40px;
+}
+
+.block-menu-title{
+    margin-bottom: 24px;
+    font-size: 1.188rem;
+}
+
+.block-menu li{
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    font-size: 1rem;
+}
+
+.block-menu a{
+    color: #777;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.block-menu a:hover{
+    color: rgba(0, 0, 0, .87);
 }
