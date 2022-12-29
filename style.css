@@ -14,6 +14,15 @@ body{
     letter-spacing: -.01em;
 }
 
+li {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, .87);
+}
+
 /* HEADER */
 
 header{
@@ -73,7 +82,6 @@ header{
 }
 
 .menu-right a{
-    text-transform: none;
     display: flex;
     align-items: center;
     font-weight: 600;
@@ -153,10 +161,6 @@ ion-icon{
     padding: 20px 0;
 }
 
-.region-prefooter  ul{
-    list-style: none;
-}
-
 .prefooter-container{
     display: flex;
     max-width: 1240px;
@@ -174,6 +178,7 @@ ion-icon{
 
 .block-menu{
     margin-right: 40px;
+    max-width: 190px;
 }
 
 .block-menu-title{
@@ -190,10 +195,97 @@ ion-icon{
 
 .block-menu a{
     color: #777;
-    text-decoration: none;
     font-weight: 400;
 }
 
 .block-menu a:hover{
     color: rgba(0, 0, 0, .87);
 }
+
+/* FOOTER */
+
+.region-footer{
+    padding: 30px 0 0 20px;
+}
+
+.footer-container{
+    max-width: 1240px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    border-top: 1px solid #eee;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.social-media ul{
+    display: flex;
+    justify-content: center;
+}
+
+.social-media li:nth-child(2){
+    margin-right: 0;
+}
+
+.social-media li a{
+    background-image: url(https://www.starbucks.com.ar/static/images/social_networks.svg);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    text-indent: -9999em;
+    background-size: 34px;
+    display: inline-block;
+    height: 34px;
+    margin-bottom: 20px;
+    margin-right: 30px;
+    width: 34px;
+}
+
+.social-media li a:hover{
+    transform: translateY(-2px);
+    cursor: pointer;
+}
+
+.social-media li a.instagram-icon{
+    background-position-y: -74px;
+}
+
+.social-media li a.linkedin-icon{
+    background-position-y: -217px;
+}
+
+
+.legal-menu{
+    display: flex;
+    margin-bottom: 15px;
+    justify-content: center;
+}
+
+.legal-menu li{
+    margin: 0;
+    padding: 0 20px;
+    border-right: 1px solid #999;
+}
+
+.legal-menu li a{
+    color: #999;
+}
+
+.legal-menu li a:hover{
+    color: #777;
+}
+
+.legal-menu li:last-child{
+    border-right: none
+}
+
+.copyright-container span{
+    color: #999;
+    display: block;
+    font-size: .875rem;
+    font-weight: 300;
+}
+
+.copyright-container span:last-child{
+    font-size: .625rem;
+}
+
